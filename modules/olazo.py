@@ -1,0 +1,70 @@
+import os
+
+CHOICES = (0, 1, 2)
+
+def display_menu():
+    """ Display the main menu """
+    print(
+        "=== This is John Albert Olazo's ===\n"
+        "[1] Basic Info\n"
+        "[2] Goals\n"
+        "[0] Exit\n"
+    )
+
+def get_user_choice():
+    """ Get the user's choice from the menu """
+    user_input = input("Enter your choice: ")
+
+    if user_input.isdigit():
+        choice = int(user_input)
+        if choice in CHOICES:
+            return choice
+        else:
+            print("Invalid choice. Please try again.\n")
+            return None
+
+    print("Invalid input. Please enter a number.\n")
+    return None
+
+def display_basic_info():
+    """ Display Albert's basic information """
+    print(
+        "Basic Information:\n"
+        "\tName: John Albert Olazo\n"
+        "\tAge: 20\n"
+        "\tHobbies: Music, Drawing, Coding, Gaming\n"
+    )
+
+def display_goals():
+    """ Display Albert's goals """
+    print(
+        "Goals:\n"
+        "\t1. Graduate with a bachelor's degree in Information Technology\n"
+        "\t2. Become a proficient software developer\n"
+        "\t3. Help my family achieve financial stability\n"
+    )
+
+def handle_user_choice(choice):
+    """ Handle the user's choice from the menu """
+    match choice:
+        case 1:
+            display_basic_info()
+        case 2:
+            display_goals()
+
+def olazo_main():
+    """ Main function to run the program """
+    while True:
+        os.system('cls' if os.name == 'nt' else 'clear')
+        display_menu()
+        choice = get_user_choice()
+
+        if choice == 0:
+            print("Exiting the program. Goodbye!\n")
+            break
+
+        handle_user_choice(choice)
+
+        input("Press Enter to continue...")
+
+olazo_main()
