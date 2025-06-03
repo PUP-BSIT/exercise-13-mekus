@@ -1,6 +1,6 @@
 import os
 
-CHOICES = (0, 1, 2, 3)
+CHOICES = (0, 1, 2, 3, 4)
 
 def display_menu():
     """Displays the main menu for the Dazo modules."""
@@ -9,6 +9,7 @@ def display_menu():
         "[1] My Basic Info\n"
         "[2] My Goals\n"
         "[3] Jundam - Comment\n"
+        "[4] Olazo - Comment\n"
         "[0] Exit\n"
     )
 
@@ -60,12 +61,18 @@ def handle_user_choice(choice):
         case 3:
             print(
                 "Software engineer? Dang, you must be talented!\n"
-                "I believe you’ll make it!\n")
+                "I believe you’ll make it!\n"
+            )
+        case 4:
+            print(
+                "Giving back to the community is a great goal!\n"
+                "I’m sure you’ll achieve it!\n"
+            )
 
 def dazo_main():
     """Main function to run the program"""
     while True:
-        os.system('cls' if os.name == 'nt' else 'clear')
+        os.system("cls" if os.name == "nt" else "clear")
         display_menu()
         choice = get_user_choice()
 
