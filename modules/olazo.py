@@ -1,6 +1,6 @@
 import os
 
-CHOICES = (0, 1, 2, 3)
+CHOICES = (0, 1, 2, 3, 4)
 
 def display_menu():
     """ Display the main menu """
@@ -9,6 +9,7 @@ def display_menu():
         "[1] Basic Info\n"
         "[2] Goals\n"
         "[3] Dazo - Comment\n"
+        "[4] Jundam - Comment\n"
         "[0] Exit\n"
     )
 
@@ -55,6 +56,10 @@ def handle_user_choice(choice):
         case 3:
             print("Music with coffee is the death of me!\n")
             print("May the odds be ever yours\n")
+        case 4:
+            print( 
+                "Wow! So you're going to be an IT graduate? That’s awesome!\n"
+                "Helping your family is a meaningful act of love.\n")
             
 def olazo_main():
     """ Main function to run the program """
