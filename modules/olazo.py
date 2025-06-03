@@ -21,9 +21,9 @@ def get_user_choice():
         choice = int(user_input)
         if choice in CHOICES:
             return choice
-        else:
-            print("Invalid choice. Please try again.\n")
-            return None
+
+        print("Invalid choice. Please try again.\n")
+        return None
 
     print("Invalid input. Please enter a number.\n")
     return None
@@ -57,10 +57,10 @@ def handle_user_choice(choice):
             print("Music with coffee is the death of me!\n")
             print("May the odds be ever yours\n")
         case 4:
-            print( 
+            print(
                 "Wow! So you're going to be an IT graduate? That’s awesome!\n"
                 "Helping your family is a meaningful act of love.\n")
-            
+
 def olazo_main():
     """ Main function to run the program """
     while True:
