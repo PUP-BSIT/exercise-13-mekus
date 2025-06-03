@@ -1,20 +1,21 @@
 import os
 
-CHOICES = (0, 1, 2, 3, 4)
+CHOICES = (0, 1, 2, 3, 4, 5)
 
 def display_menu():
-    """ Display the main menu """
+    """Display the main menu"""
     print(
         "=== === Get to know Jermaine === ===\n"
         "[1] Basic Info\n"
         "[2] Goals\n"
         "[3] Dazo - Comment\n"
         "[4] Jundam - Comment\n"
+        "[5] Olazo - Comment\n"
         "[0] Exit\n"
     )
 
 def get_user_choice():
-    """ Get the user's choice from the menu """
+    """Get the user's choice from the menu"""
     user_input = input("Enter your choice: ")
 
     if user_input.isdigit():
@@ -29,7 +30,7 @@ def get_user_choice():
     return None
 
 def display_basic_info():
-    """ Display Jermaine's basic information """
+    """Display Jermaine's basic information"""
     print(
         "Basic Information:\n"
         "\tName: Jermaine Razehl Agulto\n"
@@ -38,7 +39,7 @@ def display_basic_info():
     )
 
 def display_goals():
-    """ Display Jermaine's goals """
+    """Display Jermaine's goals"""
     print(
         "Goals:\n"
         "\t1. Try a new sport or challenge\n"
@@ -47,7 +48,7 @@ def display_goals():
     )
 
 def handle_user_choice(choice):
-    """ Handle the user's choice from the menu """
+    """Handle the user's choice from the menu"""
     match choice:
         case 1:
             display_basic_info()
@@ -57,11 +58,13 @@ def handle_user_choice(choice):
             print("Coding and Playing at the same time? Nice! \n")
         case 4:
             print("Starting a business is tough but worth it.\n")
+        case 5:
+            print("Trying something new is a great way to grow.\n")
 
 def agulto_main():
-    """ Main function to run the program """
+    """Main function to run the program"""
     while True:
-        os.system('cls' if os.name == 'nt' else 'clear')
+        os.system("cls" if os.name == "nt" else "clear")
         display_menu()
         choice = get_user_choice()
 

@@ -1,4 +1,4 @@
-CHOICES = (0, 1, 2, 3, 4)
+CHOICES = (0, 1, 2, 3, 4, 5)
 
 def display_menu():
     """Displays the main menu for the serohijos modules."""
@@ -8,6 +8,7 @@ def display_menu():
         "[2] My Goals\n"
         "[3] Dazo - Comment\n"
         "[4] Jundam - Comment\n"
+        "[5] Olazo - Comment\n"
         "[0] Exit\n"
     )
 
@@ -57,25 +58,30 @@ def handle_user_choice(choice):
             print("Goodluck on your Python and networking boy!\n")
         case 4:
             print(
-                "Whoa! Already 19? Sheeeesh!\n" 
-                "Becoming a network engineer is a great choice.\n" 
+                "Whoa! Already 19? Sheeeesh!\n"
+                "Becoming a network engineer is a great choice.\n"
                 "Wishing you all the best!\n")
+        case 5:
+            print(
+                "I hope we can all achieve our goals together!\n"
+                "Let's keep pushing forward!\n"
+            )
 
 def serohijos_main():
     """Main function to run the program."""
     while True:
         display_menu()
         choice = get_user_choice()
-        
+
         if choice is None:
             continue
-        
+
         if choice == 0:
             print("Exiting the program. Goodbye!")
             break
-        
+
         handle_user_choice(choice)
-        
+
         input("\nPress Enter to return to menu...")
 
 serohijos_main()

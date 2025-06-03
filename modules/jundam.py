@@ -1,17 +1,18 @@
-CHOICES = (0, 1, 2, 3)
+CHOICES = (0, 1, 2, 3, 4)
 
 def display_menu():
-    """ Displays the main menu """
+    """Displays the main menu"""
     print(
         "=== Wazzup madlang pips, This is me Dann Kyle Jundam ===\n"
         "[1] Basic Info\n"
         "[2] Goals\n"
         "[3] Dazo - Comment\n"
+        "[4] Olazo - Comment\n"
         "[0] Exit\n"
     )
 
 def get_user_choice():
-    """ Get the user's choice from the menu """
+    """Get the user's choice from the menu"""
     user_input = input("Enter your choice: ")
 
     if user_input.isdigit():
@@ -26,7 +27,7 @@ def get_user_choice():
     return None
 
 def display_basic_info():
-    """ Display Kyle's basic information """
+    """Display Kyle's basic information"""
     print(
         "  === My Basic Info ===\n"
         "Name: Dann Kyle Jundam\n"
@@ -36,7 +37,7 @@ def display_basic_info():
     )
 
 def display_goals():
-    """ Display Kyle's goals """
+    """Display Kyle's goals"""
     print(
         "  === My Goals ===\n"
         "- Graduate with a degree in IT\n"
@@ -46,7 +47,7 @@ def display_goals():
     )
 
 def handle_user_choice(choice):
-    """ Handle the user's choice from the menu """
+    """Handle the user's choice from the menu"""
     match choice:
         case 1:
             display_basic_info()
@@ -54,9 +55,14 @@ def handle_user_choice(choice):
             display_goals()
         case 3:
             print("Action star in the making! WOW!\n")
-            
+        case 4:
+            print(
+                "Riding motorcycles is a thrilling experience!\n"
+                "Just don’t forget to prioritize safety out there.\n"
+            )
+
 def jundam_main():
-    """ Main function to run the program """
+    """Main function to run the program"""
     while True:
         display_menu()
         choice = get_user_choice()
