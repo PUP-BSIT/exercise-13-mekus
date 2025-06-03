@@ -3,7 +3,7 @@ import os
 CHOICES = (0, 1, 2, 3, 4)
 
 def display_menu():
-    """ Display the main menu """
+    """Display the main menu"""
     print(
         "=== This is John Albert Olazo's ===\n"
         "[1] Basic Info\n"
@@ -14,22 +14,22 @@ def display_menu():
     )
 
 def get_user_choice():
-    """ Get the user's choice from the menu """
+    """Get the user's choice from the menu"""
     user_input = input("Enter your choice: ")
 
     if user_input.isdigit():
         choice = int(user_input)
         if choice in CHOICES:
             return choice
-        else:
-            print("Invalid choice. Please try again.\n")
-            return None
+
+        print("Invalid choice. Please try again.\n")
+        return None
 
     print("Invalid input. Please enter a number.\n")
     return None
 
 def display_basic_info():
-    """ Display Albert's basic information """
+    """Display Albert's basic information"""
     print(
         "Basic Information:\n"
         "\tName: John Albert Olazo\n"
@@ -38,7 +38,7 @@ def display_basic_info():
     )
 
 def display_goals():
-    """ Display Albert's goals """
+    """Display Albert's goals"""
     print(
         "Goals:\n"
         "\t1. Graduate with a bachelor's degree in Information Technology\n"
@@ -47,7 +47,7 @@ def display_goals():
     )
 
 def handle_user_choice(choice):
-    """ Handle the user's choice from the menu """
+    """Handle the user's choice from the menu"""
     match choice:
         case 1:
             display_basic_info()
@@ -57,12 +57,12 @@ def handle_user_choice(choice):
             print("Music with coffee is the death of me!\n")
             print("May the odds be ever yours\n")
         case 4:
-            print( 
+            print(
                 "Wow! So you're going to be an IT graduate? That’s awesome!\n"
                 "Helping your family is a meaningful act of love.\n")
-            
+
 def olazo_main():
-    """ Main function to run the program """
+    """Main function to run the program"""
     while True:
         os.system('cls' if os.name == 'nt' else 'clear')
         display_menu()
