@@ -15,18 +15,17 @@ def display_menu():
 
 def get_user_choice():
     """Prompts the user for a choice and returns it."""
-    try:
-        choice = int(input("Enter your choice: "))
+    user_input = input("Enter your choice: ")
+
+    if user_input.isdigit():
+        choice = int(user_input)
         if choice in CHOICES:
             return choice
 
-        print("Invalid choice! Please try again.")
-        input("Press Enter to try again...")
+        print("Invalid choice. Please try again.\n")
+        return None
 
-    except ValueError:
-        print("Invalid input! Please enter a number.")
-        input("Press Enter to try again...")
-
+    print("Invalid input. Please enter a number.\n")
     return None
 
 def display_basic_info():
