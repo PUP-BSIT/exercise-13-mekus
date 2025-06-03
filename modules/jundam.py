@@ -1,4 +1,4 @@
-CHOICES = (0, 1, 2)
+CHOICES = (0, 1, 2, 3)
 
 def display_menu():
     """ Displays the main menu """
@@ -6,6 +6,7 @@ def display_menu():
         "=== Wazzup madlang pips, This is me Dann Kyle Jundam ===\n"
         "[1] Basic Info\n"
         "[2] Goals\n"
+        "[3] Dazo - Comment\n"
         "[0] Exit\n"
     )
 
@@ -51,7 +52,9 @@ def handle_user_choice(choice):
             display_basic_info()
         case 2:
             display_goals()
-
+        case 3:
+            print("Action star in the making! WOW!\n")
+            
 def jundam_main():
     """ Main function to run the program """
     while True:
