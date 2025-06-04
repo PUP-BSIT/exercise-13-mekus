@@ -1,6 +1,6 @@
 import os
 
-CHOICES = (0, 1, 2, 3, 4, 5)
+CHOICES = (0, 1, 2, 3, 4, 5, 6)
 
 def display_menu():
     """Display the main menu"""
@@ -11,6 +11,7 @@ def display_menu():
         "[3] Dazo - Comment\n"
         "[4] Jundam - Comment\n"
         "[5] Olazo - Comment\n"
+        "[6] Serohijos - Comment\n"
         "[0] Exit\n"
     )
 
@@ -60,6 +61,8 @@ def handle_user_choice(choice):
             print("Starting a business is tough but worth it.\n")
         case 5:
             print("Trying something new is a great way to grow.\n")
+        case 6:
+            print("Building a network is key to success.\n")
 
 def agulto_main():
     """Main function to run the program"""
