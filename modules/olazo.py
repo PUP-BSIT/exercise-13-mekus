@@ -68,14 +68,14 @@ def handle_user_choice(choice):
             )
 
 def olazo_main():
-    """Main function to run the program"""
+    """Main function to run the olazo module"""
     while True:
         os.system('cls' if os.name == 'nt' else 'clear')
         display_menu()
         choice = get_user_choice()
 
         if choice == 0:
-            print("Exiting the program. Goodbye!\n")
+            print("Exiting the module. Goodbye!\n")
             break
 
         handle_user_choice(choice)
