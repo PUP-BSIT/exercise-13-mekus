@@ -1,4 +1,4 @@
-CHOICES = (0, 1, 2, 3, 4)
+CHOICES = (0, 1, 2, 3, 4, 5)
 
 def display_menu():
     """Displays the main menu"""
