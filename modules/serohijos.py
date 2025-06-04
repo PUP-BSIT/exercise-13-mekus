@@ -90,5 +90,3 @@ def serohijos_main():
         handle_user_choice(choice)
 
         input("\nPress Enter to return to menu...")
-
-serohijos_main()
