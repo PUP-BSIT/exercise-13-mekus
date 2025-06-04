@@ -65,7 +65,7 @@ def handle_user_choice(choice):
             print("Building a network is key to success.\n")
 
 def agulto_main():
-    """Main function to run the program"""
+    """Main function to run the agulto module"""
     while True:
         os.system("cls" if os.name == "nt" else "clear")
         display_menu()
