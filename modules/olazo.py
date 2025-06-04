@@ -59,7 +59,8 @@ def handle_user_choice(choice):
         case 4:
             print(
                 "Wow! So you're going to be an IT graduate? That’s awesome!\n"
-                "Helping your family is a meaningful act of love.\n")
+                "Helping your family is a meaningful act of love.\n"
+            )
 
 def olazo_main():
     """Main function to run the program"""
