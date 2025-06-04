@@ -61,7 +61,8 @@ def handle_user_choice(choice):
             print(
                 "Whoa! Already 19? Sheeeesh!\n"
                 "Becoming a network engineer is a great choice.\n"
-                "Wishing you all the best!\n")
+                "Wishing you all the best!\n"
+            )
         case 5:
             print(
                 "I hope we can all achieve our goals together!\n"
