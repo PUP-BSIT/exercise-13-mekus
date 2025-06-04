@@ -19,9 +19,9 @@ def get_user_choice():
         choice = int(user_input)
         if choice in CHOICES:
             return choice
-        else:
-            print("Invalid choice. Please try again.\n")
-            return None
+
+        print("Invalid input. Please try again.\n")
+        return None
 
     print("Invalid input. Please enter a number.\n")
     return None
