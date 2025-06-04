@@ -1,3 +1,5 @@
+import os
+
 CHOICES = (0, 1, 2, 3, 4, 5, 6)
 
 def display_menu():
@@ -76,6 +78,7 @@ def handle_user_choice(choice):
 def jundam_main():
     """Main function to run the jundam module"""
     while True:
+        os.system('cls' if os.name == 'nt' else 'clear')
         display_menu()
         choice = get_user_choice()
 
