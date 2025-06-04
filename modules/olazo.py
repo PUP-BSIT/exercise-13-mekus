@@ -5,7 +5,7 @@ CHOICES = (0, 1, 2, 3, 4, 5, 6)
 def display_menu():
     """Display the main menu"""
     print(
-        "=== This is John Albert Olazo's ===\n"
+        "=== Hi! I'm John Albert Olazo ===\n"
         "[1] Basic Info\n"
         "[2] Goals\n"
         "[3] Dazo - Comment\n"
