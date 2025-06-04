@@ -88,8 +88,8 @@ def dazo_main():
         choice = get_user_choice()
 
         if choice == 0:
-            print("Exiting the program. Goodbye!")
-            break
+            print("Exiting the module. Goodbye!")
+            break   
 
         handle_user_choice(choice)
 
