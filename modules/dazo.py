@@ -81,15 +81,15 @@ def handle_user_choice(choice):
             )
 
 def dazo_main():
-    """Main function to run the program"""
+    """Main function to run the dazo module"""
     while True:
         os.system("cls" if os.name == "nt" else "clear")
         display_menu()
         choice = get_user_choice()
 
         if choice == 0:
-            print("Exiting the program. Goodbye!")
-            break
+            print("Exiting the module. Goodbye!")
+            break   
 
         handle_user_choice(choice)
 
