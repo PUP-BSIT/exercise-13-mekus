@@ -52,8 +52,8 @@ def handle_user_choice(choice):
             # TODO: Implement Dazo's module
             pass
         case 3:
-            # TODO: Implement Jundam's module
-            pass
+            # Call Jundam's module
+            modules.jundam_main()
         case 4:
             # Call Olazo's module
             modules.olazo_main()
