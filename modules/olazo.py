@@ -75,7 +75,7 @@ def olazo_main():
         choice = get_user_choice()
 
         if choice == 0:
-            print("Exiting the program. Goodbye!\n")
+            print("Exiting the module. Goodbye!\n")
             break
 
         handle_user_choice(choice)
