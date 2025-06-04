@@ -10,6 +10,7 @@ def display_menu():
         "[2] Goals\n"
         "[3] Dazo - Comment\n"
         "[4] Jundam - Comment\n"
+        "[5] Serohijos - Comment\n"
         "[0] Exit\n"
     )
 
@@ -60,6 +61,10 @@ def handle_user_choice(choice):
             print(
                 "Wow! So you're going to be an IT graduate? That’s awesome!\n"
                 "Helping your family is a meaningful act of love.\n")
+        case 5:
+            print(
+                "becoming a proficient software developer? That's good!\n"
+            )
 
 def olazo_main():
     """Main function to run the program"""
