@@ -1,6 +1,6 @@
 import os
 
-CHOICES = (0, 1, 2, 3, 4, 5)
+CHOICES = (0, 1, 2, 3, 4, 5, 6)
 
 def display_menu():
     """Display the main menu"""
