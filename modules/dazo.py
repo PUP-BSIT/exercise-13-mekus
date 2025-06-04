@@ -88,5 +88,3 @@ def dazo_main():
         handle_user_choice(choice)
 
         input("\nPress Enter to return to menu...")
-
-dazo_main()
