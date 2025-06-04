@@ -78,5 +78,3 @@ def agulto_main():
         handle_user_choice(choice)
 
         input("Press Enter to continue...")
-
-agulto_main()
