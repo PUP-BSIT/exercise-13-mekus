@@ -75,7 +75,7 @@ def handle_user_choice(choice):
             )
 
 def serohijos_main():
-    """Main function to run the program."""
+    """Main function to run the serohijos module."""
     while True:
         display_menu()
         choice = get_user_choice()
