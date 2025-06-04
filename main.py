@@ -55,8 +55,8 @@ def handle_user_choice(choice):
             # TODO: Implement Jundam's module
             pass
         case 4:
-            # TODO: Implement Olazo's module
-            pass 
+            # Call Olazo's module
+            modules.olazo_main() 
         case 5:
             # TODO: Implement Serohijo's module
             pass
