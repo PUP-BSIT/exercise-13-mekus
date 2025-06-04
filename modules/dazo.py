@@ -81,7 +81,7 @@ def handle_user_choice(choice):
             )
 
 def dazo_main():
-    """Main function to run the program"""
+    """Main function to run the dazo module"""
     while True:
         os.system("cls" if os.name == "nt" else "clear")
         display_menu()
