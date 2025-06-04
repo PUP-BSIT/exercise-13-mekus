@@ -1,4 +1,4 @@
-CHOICES = (0, 1, 2, 3, 4, 5)
+CHOICES = (0, 1, 2, 3, 4, 5, 6)
 
 def display_menu():
     """Displays the main menu"""
@@ -9,9 +9,10 @@ def display_menu():
         "[3] Dazo - Comment\n"
         "[4] Olazo - Comment\n"
         "[5] Serohijos - Comment\n"
+        "[6] Agulto - Comment\n"
         "[0] Exit\n"
     )
-
+    
 def get_user_choice():
     """Get the user's choice from the menu"""
     user_input = input("Enter your choice: ")
@@ -65,6 +66,11 @@ def handle_user_choice(choice):
             print(
                 "Keep up the good work, Dann Kyle Jundam!\n"
                 "Your dedication to your goals is inspiring!\n"
+            )
+        case 6:
+            print(
+                "Wow, 24 and chasing solid goals, love that!\n"
+                "With that drive, you'll make your family proud for sure!\n"
             )
 
 def jundam_main():
