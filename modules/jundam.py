@@ -68,7 +68,7 @@ def handle_user_choice(choice):
             )
 
 def jundam_main():
-    """Main function to run the program"""
+    """Main function to run the jundam module"""
     while True:
         display_menu()
         choice = get_user_choice()
