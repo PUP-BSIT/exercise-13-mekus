@@ -68,13 +68,13 @@ def handle_user_choice(choice):
             )
 
 def jundam_main():
-    """Main function to run the program"""
+    """Main function to run the jundam module"""
     while True:
         display_menu()
         choice = get_user_choice()
 
         if choice == 0:
-            print("Exiting the program. Goodbye!\n")
+            print("Exiting the module. Goodbye!\n")
             break
 
         handle_user_choice(choice)
