@@ -81,5 +81,3 @@ def olazo_main():
         handle_user_choice(choice)
 
         input("Press Enter to continue...")
-
-olazo_main()
