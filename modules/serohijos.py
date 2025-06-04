@@ -1,4 +1,4 @@
-CHOICES = (0, 1, 2, 3, 4, 5)
+CHOICES = (0, 1, 2, 3, 4, 5, 6)
 
 def display_menu():
     """Displays the main menu for the serohijos modules."""
@@ -9,6 +9,7 @@ def display_menu():
         "[3] Dazo - Comment\n"
         "[4] Jundam - Comment\n"
         "[5] Olazo - Comment\n"
+        "[6] Agulto - Comment\n"
         "[0] Exit\n"
     )
 
@@ -65,6 +66,11 @@ def handle_user_choice(choice):
             print(
                 "I hope we can all achieve our goals together!\n"
                 "Let's keep pushing forward!\n"
+            )
+        case 6: 
+            print(
+                "Keep building those skills you’re on your\n"
+                "way to becoming a great network engineer!\n"
             )
 
 def serohijos_main():
