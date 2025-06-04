@@ -84,7 +84,7 @@ def serohijos_main():
             continue
 
         if choice == 0:
-            print("Exiting the program. Goodbye!")
+            print("Exiting the module. Goodbye!")
             break
 
         handle_user_choice(choice)
