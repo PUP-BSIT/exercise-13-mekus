@@ -80,5 +80,3 @@ def jundam_main():
         handle_user_choice(choice)
 
         input("Press Enter to continue...\n")
-
-jundam_main()
